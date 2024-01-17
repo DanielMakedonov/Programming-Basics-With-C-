@@ -1,0 +1,12 @@
+﻿double nylon = double.Parse(Console.ReadLine());
+double paint  = double.Parse(Console.ReadLine());
+double thinner  = double.Parse(Console.ReadLine());
+double hours  = double.Parse(Console.ReadLine());
+var nylonprice = (nylon + 2) * 1.50;
+var paintprice = (paint +(paint * 0.10)) * 14.50;
+var thinnerprice = thinner * 5.00;
+double bag = 0.40;
+var expenses = nylonprice + paintprice + thinnerprice + bag;
+var labor = hours * (expenses * 0.30);
+var sum = labor + expenses;
+Console.WriteLine(sum);

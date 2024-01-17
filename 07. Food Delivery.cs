@@ -1,0 +1,11 @@
+﻿double chicken = double.Parse(Console.ReadLine());
+double fish = double.Parse(Console.ReadLine());
+double vegan = double.Parse(Console.ReadLine());
+var first = chicken * 10.35;
+var second = fish * 12.40;
+var third = vegan * 8.15;
+var sum = first + second + third;
+var dessert = sum * 0.20;
+double delivery = 2.50;
+var bill = sum + dessert + delivery;
+Console.WriteLine(bill);

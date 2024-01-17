@@ -1,0 +1,10 @@
+﻿double pen = double.Parse(Console.ReadLine());
+double markers = double.Parse(Console.ReadLine());
+double bottle = double.Parse(Console.ReadLine());
+double discount = double.Parse(Console.ReadLine());
+var pack1 = pen * 5.80;
+var pack2 = markers * 7.20;
+var pack3 = bottle * 1.20;
+var sum = pack1 + pack2 + pack3;
+var bill = sum - (sum * (discount / 100));
+Console.WriteLine(bill);
