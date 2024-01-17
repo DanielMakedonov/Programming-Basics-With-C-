@@ -1,0 +1,12 @@
+﻿double x = double.Parse(Console.ReadLine());
+double y = double.Parse(Console.ReadLine());
+double h = double.Parse(Console.ReadLine());
+double Door = 1.2 * 2;
+double Window = 1.5 * 1.5;
+double FrontAndBackWalls = 2 * (x * x) - Door;
+double SideWalls = 2 * (x * y - Window);
+double Roof = (2 * (x * y)) + (2 * ((x * h) / 2));
+double GreenPaintNeeded = (FrontAndBackWalls + SideWalls) / 3.4;
+double RedPaintNeeded = Roof / 4.3;
+Console.WriteLine($"{GreenPaintNeeded:F2}");
+Console.WriteLine($"{RedPaintNeeded:F2}");

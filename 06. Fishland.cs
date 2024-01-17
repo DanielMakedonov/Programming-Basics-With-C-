@@ -1,0 +1,10 @@
+﻿double mackerelPrice = double.Parse(Console.ReadLine());
+double sprinklePrice  = double.Parse(Console.ReadLine());
+double bonitoWeight = double.Parse(Console.ReadLine());
+double scadWeight  = double.Parse(Console.ReadLine());
+double musselsWeight  = double.Parse(Console.ReadLine());
+double bonitoPrice = (mackerelPrice + mackerelPrice * 0.6) * bonitoWeight;
+double scadPrice = (sprinklePrice + sprinklePrice * 0.8) * scadWeight;
+double musselsPrice = musselsWeight * 7.5;
+double money = bonitoPrice + scadPrice + musselsPrice;
+Console.WriteLine($"{money:F2}");
